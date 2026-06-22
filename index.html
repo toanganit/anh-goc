@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>My Original Photo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Work | My Portfolio</title>
+    <!-- Font chữ Nhật (Noto Sans JP) tạo cảm giác website Nhật -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans JP', 'Helvetica Neue', sans-serif;
+            background: #f9f9f7;
+            color: #2d2d2d;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-weight: 300;
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            margin-bottom: 0.3rem;
+        }
+        header p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        .work-info {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .work-info h2 {
+            font-weight: 500;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 1rem;
+        }
+        .meta span {
+            display: inline-block;
+        }
+        .image-container {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.01);
+        }
+        .description {
+            margin-top: 1.5rem;
+            color: #555;
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #aaa;
+            padding: 2rem 0;
+        }
+    </style>
 </head>
 <body>
-  <h1>Ảnh gốc của tôi</h1>
-  <img src="727364800_1525235648984501_8751105192935955753_n.jpg" alt="Original Photo" style="max-width:100%">
-  <p>Tác phẩm gốc được đăng bởi Toa Ngan vào ngày 2024-01-15.</p>
+    <div class="container">
+        <header>
+            <h1>Original Work</h1>
+            <p>© 2024 by [Your Name]</p>
+        </header>
+
+        <section class="work-info">
+            <h2>無題 (Untitled Photograph)</h2>
+            <div class="meta">
+                <span>📅 Published: <strong>2024-01-15</strong></span>
+                <span>© All rights reserved</span>
+            </div>
+            <div class="image-container">
+                <!-- THAY 'tenanh.jpg' bằng tên file ảnh của bạn -->
+                <img src="tenanh.jpg" alt="Original Work">
+            </div>
+            <div class="description">
+                <p>This is an original photographic work created by me on [date]. Unauthorized reproduction or use of this image is strictly prohibited. This page serves as the official publication record of my copyright ownership.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>本作品の著作権は作者に帰属します。</p>
+        </footer>
+    </div>
 </body>
 </html>
