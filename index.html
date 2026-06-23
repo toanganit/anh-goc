@@ -63,16 +63,21 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.04);
             overflow: hidden;
             transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
         }
         .gallery-item:hover { transform: translateY(-3px); }
+        /* SỬA: bỏ chiều cao cố định, dùng max-height và object-fit contain để ảnh không bị cắt */
         .gallery-item img {
             width: 100%;
-            height: 250px;
-            object-fit: cover;
+            max-height: 400px; /* giới hạn chiều cao tối đa, nhưng không cắt */
+            object-fit: contain; /* hiển thị toàn bộ ảnh, không cắt */
             display: block;
+            background: #f5f5f5; /* nền nhẹ nếu ảnh không phủ hết khung */
         }
         .gallery-item .info {
             padding: 1rem 1.2rem;
+            flex: 1;
         }
         .gallery-item .info h3 {
             font-size: 1.1rem;
@@ -169,8 +174,6 @@
                     <a href="https://raw.githubusercontent.com/toanganit/media.cosplay/main/bikini3.jpg" target="_blank">オリジナル画像を表示</a>
                 </div>
             </div>
-
-            <!-- THÊM ẢNH MỚI THÌ COPY MỘT KHỐI TRÊN RỒI SỬA -->
 
         </div>
 
